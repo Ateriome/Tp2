@@ -1,16 +1,8 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
-int calcul(int a, int b)
+int main()
 {
-    return (a*b);
-}
-int calcul(int a, int b, int c)
-{
-    return (a*b*c);
-}
-int main ()
-{
-    int x = 10, y = 30, z = 50;
-    cout << calcul(x,y) << " " << calcul(x,y,z) << endl;
+    ofstream monFlux("/c/scores.txt");
     return 0;
 }
